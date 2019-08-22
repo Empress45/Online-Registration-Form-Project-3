@@ -53,7 +53,13 @@ header {
   color: black;
 }
 
-.intro,  p {
+h3 {
+  text-align: left;
+  color: black;
+}
+
+.intro,  p,
+.topic, .format  {
   font-size: 1.1em;
   color: grey;
   text-shadow: 2px  1px  0  rgba(255, 200,0, 0.5);
@@ -107,8 +113,8 @@ legend {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="address"],
-input[type="city"],
+input[type="text"],
+input[type="text"],
 input[type="number"],
 select,
 textarea {
