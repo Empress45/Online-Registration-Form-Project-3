@@ -10,7 +10,7 @@ body {
 
 form {
   width: 460px;
-  margin: 10px  auto;
+  margin: 0  auto;
   padding: 10px  20px;
   display: block;
   background: #c190e3;
@@ -47,6 +47,12 @@ input,:focus {
   border: none;
   box-shadow: 0 8px 6px -6px;
   transition: 1s;
+}
+
+#zip_code {
+  display: block;
+  width: 40%;
+  margin-bottom: 15px;
 }
 
 
@@ -123,11 +129,6 @@ legend {
   font-size: 1.4em;
   margin-bottom: 20px;
 }
-
-.zip_code  {
-width: 50%;
-}
-
 
 input[type="text"],
 input[type="email"],
@@ -228,10 +229,16 @@ border-radius: 100%;
 
 label {
   flex-grow: 0;
+  font-size: 1.2em;
   flex-basis: 150px;
 }
 
 input  {
   flex-grow: 1;
    }
+
+#zip_code {
+  margin-right: 45%;
+  max-width: 33%;
+    }
 }
