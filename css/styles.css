@@ -12,8 +12,7 @@ form {
   width: 460px;
   margin: 10px  auto;
   padding: 10px  20px;
-  display: flex;
-  flex-direction: column;
+  display: block;
   background: #c190e3;
 }
 
@@ -39,6 +38,9 @@ legend {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 20px;
+  text-align: left;
+  color:  black;
+  text-shadow: 2px  1px  0  rgba(255, 200,0, 0.5);
 }
 
 input,:focus {
@@ -81,21 +83,13 @@ h3, .format, label,
 }
 
 .line-thick  {
-display: block;
 height: 5px;
-width: 625px;
 border-top: 6px  solid  #000;
 border-bottom: 2px  solid  #000;
 border-right: 0px;
 border-left: 0px;
 margin-top: 25px;
 margin-bottom : 40px;
-}
-
-legend {
-  text-align: left;
-  color: #000;
-  text-shadow: 2px  1px  0  rgba(255, 255, 255, .1);
 }
 
 .line-thin {
@@ -116,7 +110,9 @@ textarea:hover {
   border-radius: 1em;
 }
 
+
 footer {
+  margin-top: 40px;
   text-align: center;
   color: grey;
   font-style: italic;
@@ -128,9 +124,10 @@ legend {
   margin-bottom: 20px;
 }
 
-input#zip_code {
-max-width: 200px;
+.zip_code  {
+width: 50%;
 }
+
 
 input[type="text"],
 input[type="email"],
@@ -179,10 +176,11 @@ select {
   border-radius: 2px;
 }
 
-textarea {
+textarea, #other {
   transition: 1s;
   cursor: text;
   height: 150px;
+  padding-left: 0px;
 }
 
 button {
