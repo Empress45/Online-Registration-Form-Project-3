@@ -151,8 +151,12 @@ textarea {
 }
 
 input:focus {
-  border: none;
-  box-shadow: 0 8px 6px -6px;
+  background-color:  rgb(184, 203, 224);
+}
+
+:focus {
+border: solid #9118e6 1px;
+border-radius: 5px;
 }
 
 select[id="state"] {
